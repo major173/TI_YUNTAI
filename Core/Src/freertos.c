@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "imu_task.hpp"
 
 /* USER CODE END Includes */
 
@@ -114,11 +115,7 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
+  appImuTask(argument);
   /* USER CODE END StartDefaultTask */
 }
 
