@@ -1,14 +1,14 @@
 #ifndef QD4310_H
 #define QD4310_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <stdbool.h>
 #include <stdint.h>
 
 #include "usart.h"
+#ifdef __cplusplus
+#include "Qd4310Motor.hpp"
+extern "C" {
+#endif
 
 typedef enum {
     QD4310_CMD_NOP = 0x00,

@@ -47,7 +47,7 @@ function(include_sub_directories_recursively root_dir)
     endforeach()
 endfunction()
 
-file(GLOB_RECURSE SOURCES
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
     "APP/*.c"
     "APP/*.cpp"
     "BSP/*.c"
